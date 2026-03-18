@@ -1,8 +1,3 @@
-from dotenv import load_dotenv
-import os
+from document_loader import load_pdf, load_docx, load_url
 
-load_dotenv()
-
-groq_api_key = os.getenv("GROQ_API_KEY")
-
-print("API loaded:", groq_api_key is not None)
+print("loader ready")
